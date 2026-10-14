@@ -10,15 +10,16 @@
 // --------------------------------------------------
 
 // First, we create a variable for the current scene being displayed
-let currentScene = "backyard";
+let currentScene = "flowershop";
 
 // Then, we create an object that stores the data for each scene,
 const scenes = {
   // See "backyard" for the first example
-  backyard: {
-    title: "Location: Backyard",
-    character: "Interviewee:Grandma",
-    text: "Text: well what I remember happening is that Darcie went inside to play with her pretend kitchen, I heard her neighbor mention he was really hungry, and the dog ran around really quickly",
+  flowershop: {
+    title: "Location: Flower shop",
+    character: "Interviewee:Daisy",
+    image: "https://img.freepik.com/premium-photo/generate-image-interior_1015255-33177.jpg",
+    text: "Text: ",
     // you can choose how many choices to include
     // each choice can have text, an action, and/or nextScene
     choices: [
@@ -43,25 +44,35 @@ const scenes = {
     ]
   },
 
-  entrance: {
-    title: "Location: Entrance",
-    character: "Interviewee:Neighbor",
-    text: "well what I remember...",
+  daisy: {
+    title: "Interviewee: Daisy",
+    image: "https://media.istockphoto.com/id/134839570/vector/florist-girl.jpg?s=612x612&w=0&k=20&c=sJBm--ECTbBZ77MCo-SQHA8S6WSH4IjJN8eiv7my5zY=",
+    bio: "Daisy is the owner of the flower shop. She is a kind and friendly person who loves to help her customers find the perfect flowers for any occasion. Her favorite flower is the rose, and she has a special talent for arranging them in beautiful bouquets.",
+    dialogue: `Daisy: hello
+    You: How are you feeling? 
+    daisy: not great, I just found out that my store was broken into last night. I can't believe someone would do that to me. I'm just glad that no one was hurt and that the police are investigating the situation. I hope they catch the person responsible soon.`,
     choices: [
       {
-        text: "Ask about the dog",
-        nextScene: "backyard"
+        text: "Ask what she was doing the night of the robbery",
+        response: "well what I remember happening is that I got a call pfrom the police at about 3:30 in the morning telling me that the store had been broken into. I immediately left the house and drove to the store. When I got there, I saw that the front door had been smashed in and the cash register was open. I called the police and they arrived shortly after. They took my statement and collected evidence from the scene.",
       },
          {
-        text: "Ask about the neighbor",
-        nextScene: "hallway"
+        text: "Ask about why she opened a flower shop ",
+        response: "hallway"
+      },
+      {
+        text: "ask about her relationships with her customers",
+        response: "I love all of my customers and I try to get to know them as best as I can. I want them to feel comfortable coming to me for their flower needs, and I want to make sure that they are happy with the arrangements that I create for them. I also like to get feedback from my customers so that I can improve my business and provide the best service possible.There are times when I dont get along well with some of them but, thstd not important... I just want to make sure that everyone is happy and satisfied with their experience at my flower shop.",
       }
+      
+
+      
     ]
   },
 
-  hallway: {
-    title: "The Hallway",
-    text: "The hallway is dark and silent.",
+  Petunia: {
+    title: "Interviewee: Petunia",
+    Bio: "Petunia is a regular customer at the flower shop. She is a sweet and caring person who loves to give flowers to her friends and family. Her favorite flower is the tulip, and she enjoys arranging them in creative ways. She is a mother of two young children and often buys flowers to brighten up her home. She never doesnt have flowers in her home, and she always makes sure to have a fresh bouquet on her dining table. She is also a member of the local gardening club and enjoys sharing tips and advice with other members.",
     choices: [
       {
         text: "backyard",
