@@ -3,6 +3,24 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #fff3f6, #f3f7ff);
   color: #2d2d2d;
+
+.heading {
+  background-color: lightgray;
+  text-align: left;
+  letter-spacing: 0.1em;
+  border: 3px black dotted;
+  margin: 50px;
+  padding: 10px;
+}
+
+.card {
+  background-color: #a5e7b9;
+  border: 1px solid #e28888;
+  border-radius: 12px;
+  border-style: dotted;
+  padding: 20px;
+  margin: 20px 0;
+}
 }
 
 .page-wrap,
