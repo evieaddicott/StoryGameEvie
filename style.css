@@ -5,22 +5,32 @@ body {
   color: #2d2d2d;
 
 .heading {
-  background-color: lightgray;
+  background-color: rgb(246, 248, 188);
   text-align: center;
   letter-spacing: 0.1em;
-  border: 3px black dotted;
-  margin: 50px;
-  padding: 10px;
+  border: 3px rgb(15, 6, 110) dotted;
+  margin: 100px;
+  padding: 20px;
 }
 
 .card {
-    background-color: #acd5ff;
+    background-color: rgb(246, 248, 188);
     border: 1px dotted #e28888;
     border-radius: 12px;
     padding: 20px;
     margin: 20px;
     text-align: center;
     width: 400px;
+    margin: 0 auto;
+}
+
+.text{
+  background-color: rgb(246, 214, 245);
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin: 50px;
+  padding: 10px;
+  border-radius: 12px;
 }
 
 #inventory {
